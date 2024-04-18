@@ -13,8 +13,10 @@
 .meus-filmes span {
     font-size: 18px;
 }
+
 .meus-filmes ul {
-    width: 720px;
+    max-width: 720px;
+    width: 100%;
 }
 
 .meus-filmes ul li {
@@ -67,4 +69,11 @@
 .action-buttons a:hover {
     background-color: darkblue;
     transition: all 0.5s;
+}
+
+@media (max-width: 520px) {
+    .meus-filmes ul li {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
